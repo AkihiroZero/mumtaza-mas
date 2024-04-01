@@ -38,7 +38,7 @@ class KadarEmasController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreKadarRequest $request, EmasService $emas)
+    public function store(StoreKadarRequest $request, KadarService $emas)
     {
         return $emas->create($request)
             ? back()->with('success', 'levelEmas group has been created successfully!')
@@ -64,10 +64,10 @@ class KadarEmasController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(StoreKadarRequest $request, $kadarEmas, KadarService $levelService)
+    public function update(StoreKadarRequest $request, $kadarEmas, KadarService $kadarService)
     {
         $kadarEmas = KadarEmas::findOrFail($kadarEmas);
-        return $levelService->update($request, $kadarEmas)
+        return $kadarService->update($request, $kadarEmas)
             ? back()->with('success', 'Menu KadarEmas has been updated successfully!')
             : back()->with('failed', 'Menu KadarEmas has not been updated successfully!');
     }

@@ -178,10 +178,19 @@ class RouteSeederTableSeeder extends Seeder
             ],
         ]);
 
+        // Data Emas Management
         Route::insert([
             [
                 'route' => 'emas.index',
-                'permission_name' => 'jenis_emas_management'
+                'permission_name' => 'data_emas_management'
+            ],
+        ]);
+
+        // Category Emas Management
+        Route::insert([
+            [
+                'route' => 'category.index',
+                'permission_name' => 'category_emas_management'
             ],
         ]);
     }

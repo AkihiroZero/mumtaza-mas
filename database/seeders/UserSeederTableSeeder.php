@@ -30,5 +30,35 @@ class UserSeederTableSeeder extends Seeder
             'email' => 'admin@gmail.com',
             'password' => 'administrator'
         ]);
+
+        User::factory()->create([
+            'name' => 'Admin_05',
+            'email' => 'admin05@gmail.com',
+            'password' => 'administrator'
+        ]);
+
+        User::factory()->create([
+            'name' => 'Admin_10',
+            'email' => 'admin10@gmail.com',
+            'password' => 'administrator'
+        ]);
+
+        User::factory()->create([
+            'name' => 'Admin_15',
+            'email' => 'admin15@gmail.com',
+            'password' => 'administrator'
+        ]);
+
+        User::factory()->create([
+            'name' => 'Admin_20',
+            'email' => 'admin20@gmail.com',
+            'password' => 'administrator'
+        ]);
+
+        User::factory()->create([
+            'name' => 'Admin_25',
+            'email' => 'admin25@gmail.com',
+            'password' => 'administrator'
+        ]);
     }
 }

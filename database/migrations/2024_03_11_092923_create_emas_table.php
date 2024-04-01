@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\CategoryEmas;
 use App\Models\KadarEmas;
 use App\Models\LevelEmas;
 use Illuminate\Database\Migrations\Migration;
@@ -18,9 +19,14 @@ return new class extends Migration
             $table->string('name');
             $table->foreignIdFor(KadarEmas::class);
             $table->foreignIdFor(LevelEmas::class);
-            $table->string('image');
-            $table->integer('weight');
-            $table->string('description');
+            $table->foreignIdFor(CategoryEmas::class);
+            $table->string('image')->nullable();
+            $table->string('weight');
+            $table->string('color')->nullable();
+            $table->text('description')->nullable();
+            $table->string('barcode')->nullable();
+            $table->string('vendor')->nullable();
+            $table->boolean('bahan_keramik')->nullable();
             $table->boolean('status')->default(true);
             $table->timestamps();
         });

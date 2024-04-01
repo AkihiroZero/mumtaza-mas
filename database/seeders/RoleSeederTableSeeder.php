@@ -31,9 +31,10 @@ class RoleSeederTableSeeder extends Seeder
             'profile_index',
             'menu_emas',
             'data_emas',
+            'data_emas_management',
             'level_emas_management',
             'kadar_emas_management',
-            'jenis_emas_management',
+            'category_emas_management',
         ]);
         $user->givePermissionTo(['general', 'dashboard_index', 'profile_index']);
 

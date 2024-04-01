@@ -25,9 +25,14 @@ class StoreEmasRequest extends FormRequest
             'name' => ['required', 'string'],
             'kadar_emas_id' => ['required', 'string'],
             'level_emas_id' => ['required', 'string'],
-            'image' => 'required|image|mimes:jpeg,png,jpg',
-            'weight' => ['required', 'integer'],
+            'category_emas_id' => ['required', 'string'],
+            'image' => 'nullable|image|mimes:jpeg,png,jpg',
+            'weight' => ['required', 'string'],
             'description' => ['nullable', 'string'],
+            'vendor' => ['nullable', 'string'],
+            'barcode' => ['nullable', 'string'],
+            'color' => ['nullable', 'string'],
+            'bahan_keramik' => ['nullable', 'boolean'],
             'status' => ['nullable', 'required', 'boolean'],
         ];
     }

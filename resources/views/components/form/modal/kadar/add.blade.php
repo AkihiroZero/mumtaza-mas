@@ -36,7 +36,7 @@
                         <div class="form-check form-switch form-switch-right form-switch-md">
                             <label for="status" class="form-label">Status</label>
                             <input class="form-check-input code-switcher" type="checkbox" id="tables-small-showcode"
-                                name="status" value="1">
+                                name="status" value="1" checked>
                         </div>
                         <x-form.validation.error name="status" />
                     </div>

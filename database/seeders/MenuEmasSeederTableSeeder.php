@@ -22,7 +22,7 @@ class MenuEmasSeederTableSeeder extends Seeder
 
         MenuItem::create([
             'name' => 'Level Emas',
-            'icon' => 'ri-coin-fill',
+            'icon' => 'ri-vip-diamond-fill',
             'route' => 'level.index',
             'permission_name' => 'level_emas_management',
             'menu_group_id' => $general->id,
@@ -31,7 +31,7 @@ class MenuEmasSeederTableSeeder extends Seeder
 
         MenuItem::create([
             'name' => 'Kadar Emas',
-            'icon' => 'ri-coin-fill',
+            'icon' => 'ri-copper-diamond-fill',
             'route' => 'kadar.index',
             'permission_name' => 'kadar_emas_management',
             'menu_group_id' => $general->id,
@@ -39,12 +39,21 @@ class MenuEmasSeederTableSeeder extends Seeder
         ]);
 
         MenuItem::create([
-            'name' => 'Data Emas',
-            'icon' => 'ri-coin-fill',
-            'route' => 'emas.index',
-            'permission_name' => 'jenis_emas_management',
+            'name' => 'Category Emas',
+            'icon' => 'ri-copyright-fill',
+            'route' => 'category.index',
+            'permission_name' => 'category_emas_management',
             'menu_group_id' => $general->id,
             'posision' => 3,
+        ]);
+
+        MenuItem::create([
+            'name' => 'Data Emas',
+            'icon' => 'ri-copper-coin-fill',
+            'route' => 'emas.index',
+            'permission_name' => 'data_emas_management',
+            'menu_group_id' => $general->id,
+            'posision' => 4,
         ]);
     }
 }

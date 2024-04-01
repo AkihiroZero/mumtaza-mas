@@ -24,6 +24,7 @@ class DatabaseSeeder extends Seeder
         $this->call(MenuEmasSeederTableSeeder::class);
         $this->call(PermissionManagementDatabaseSeeder::class);
         $this->call(SettingSeederTableSeeder::class);
+        $this->call(CategoryEmasTableSeeder::class);
         $this->call(LevelEmasTableSeeder::class);
         $this->call(KadarEmasTableSeeder::class);
     }

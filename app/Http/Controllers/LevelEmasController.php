@@ -74,7 +74,7 @@ class LevelEmasController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(LevelEmas $levelEmas)
+    public function destroy($levelEmas)
     {
         return LevelEmas::findOrFail($levelEmas)->delete()
             ? back()->with('success', 'Menu group has been deleted successfully!')

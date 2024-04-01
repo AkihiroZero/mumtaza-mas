@@ -1,2 +1,8 @@
-
 /*# sourceMappingURL=custom.min.css.map */
+
+.description {
+    flex-basis: 100%;
+    /* Menggunakan seluruh lebar yang tersedia */
+    overflow-wrap: break-word;
+    /* Memecah kata jika melebihi lebar */
+}

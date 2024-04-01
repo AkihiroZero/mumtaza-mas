@@ -72,8 +72,9 @@ class PermissionSeederTableSeeder extends Seeder
         Permission::create(['name' => 'permission_destroy']);
 
         // Menu Emas Management
+        Permission::create(['name' => 'data_emas_management']);
         Permission::create(['name' => 'level_emas_management']);
         Permission::create(['name' => 'kadar_emas_management']);
-        Permission::create(['name' => 'jenis_emas_management']);
+        Permission::create(['name' => 'category_emas_management']);
     }
 }
